@@ -1,1 +1,9 @@
-@import "./Stylesheets/homepage";
+@import "./Stylesheets/Components/CollectionItem/CollectionItem";
+@import "./Stylesheets/Components/PreviewCollection/PreviewCollection";
+@import "./Stylesheets/Views/homepage";
+
+
+body{
+    font-family: 'Open Sans Condensed';
+    padding: 20px 60px;
+}
