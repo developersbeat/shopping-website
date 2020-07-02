@@ -1,9 +1,13 @@
 @import "./Stylesheets/Components/CollectionItem/CollectionItem";
 @import "./Stylesheets/Components/PreviewCollection/PreviewCollection";
 @import "./Stylesheets/Views/homepage";
-
+@import "./Stylesheets//Components/Header/Header";
 
 body{
     font-family: 'Open Sans Condensed';
     padding: 20px 60px;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
