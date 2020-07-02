@@ -4,6 +4,7 @@ import Homepage from './Views/Homepage';
 import ShopPage from "./Views/Shop/shop";
 import {Route, Switch} from 'react-router-dom';
 import Header from "./Components/Header/Header";
+import SignInSignUp from "./Views/SignInSignUp/SigninSignUp";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
      <Switch>
        <Route exact path='/' component={Homepage}/>
        <Route exact path='/shop' component={ShopPage}/>
+       <Route exact path='/signin' component={SignInSignUp}/>
+
 
      </Switch>
     </Fragment>
