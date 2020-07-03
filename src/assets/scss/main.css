@@ -213,6 +213,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  cursor: pointer;
 }
 
 .header .options .option {
@@ -220,7 +221,7 @@
 }
 
 .sign-in {
-  width: 30vw;
+  width: 35vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,6 +309,16 @@
   border: 1px solid black;
 }
 
+.custom-button.google-sign-in {
+  background-color: #4285f4;
+  color: white;
+}
+
+.custom-button.google-sign-in:hover {
+  background-color: #357ae8;
+  border: none;
+}
+
 body {
   font-family: 'Open Sans Condensed';
   padding: 20px 60px;
@@ -316,5 +327,10 @@ body {
 a {
   text-decoration: none;
   color: black;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=main.css.map */
