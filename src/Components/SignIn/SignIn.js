@@ -17,6 +17,7 @@ export default class SignIn extends Component {
     this.setState({email:"", password:""})
   }
   handleChange = event => {
+    
     const { value, name} = event.target;
     this.setState({ [name] : value})
   }
@@ -27,12 +28,12 @@ export default class SignIn extends Component {
         <span>Sign in with your email and password</span>
 
         <form onSubmit={this.handleChange}>
-            <FormInput name="email" type="email" label="Email" handleChange={this.handleChange} value={this.state.email} required/>
-            <FormInput name="password" handleChange={this.handleChange} label="Password" type="password" value={this.state.password} required/>
+            <FormInput name="email" type="email" label="Email" handleChange={this.handleChange} value={this.state.email} autoComplete="nope" required />
+            <FormInput name="password" handleChange={this.handleChange} label="Password" type="password" value={this.state.password}  autoComplete="nope" required/>
             <CustomButton type="submit">Sign In </CustomButton>
-            <CustomButton onClick={signInWithGoogle} isGoogleSignIn> Sign In with Google</CustomButton>
-
         </form>
+        <CustomButton  style={{width: "320px", marginTop: "10px"}} onClick={signInWithGoogle} isGoogleSignIn> Sign In with Google</CustomButton>
+
 
       </div>
     );
